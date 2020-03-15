@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+    <!-- Bootstrap -->
+
+
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Rubik', sans-serif;
+            background-image: -moz-linear-gradient( 135deg, #1A69A1 0%, #2CA8FF 100%);
+            background-image: -webkit-linear-gradient( 135deg, #1A69A1 0%, #2CA8FF 100%);
+            background-image: -ms-linear-gradient( 135deg, #1A69A1 0%, #2CA8FF 100%);
+            background-image: linear-gradient( 135deg, #1A69A1 0%, #2CA8FF 100%);
+        }
+        
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            transform: scale(1);
+            font-family: 'Rubik', sans-serif;
+        }
+        
+        .img {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        
+        .img img {
+            width: 850px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .login-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        form {
+            width: 360px;
+            font-family: 'Rubik', sans-serif;
+        }
+        
+        .avatar {
+            width: 100px;
+        }
+        
+        form h2 {
+            font-size: 2.9rem;
+            text-transform: uppercase;
+            margin: 15px 0;
+            font-weight: 300;
+            color: whitesmoke;
+            font-family: inherit;
+        }
+        
+        .input-div {
+            position: relative;
+            display: grid;
+            grid-template-columns: 7% 93%;
+            margin: 25px 0;
+            padding: 5px 0;
+            border-bottom: 2px solid #d9d9d9;
+        }
+        
+        .input-div:after,
+        .input-div:before {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            width: 0;
+            height: 2px;
+            background-color: #fff;
+            transition: .3s;
+        }
+        
+        .input-div:after {
+            right: 50%;
+        }
+        
+        .input-div:before {
+            left: 50%;
+        }
+        
+        .input-div.focus .i i {
+            color: #fff;
+        }
+        
+        .input-div.focus div h5 {
+            top: -5px;
+            font-size: 15px;
+        }
+        
+        .input-div.focus:after,
+        .input-div.input-div.focus:before {
+            width: 50%;
+        }
+        
+        .input-div.one {
+            margin-top: 0;
+        }
+        
+        .input-div.two {
+            margin-bottom: 4px;
+        }
+        
+        .i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .i i {
+            color: #d9d9d9;
+            transition: .3s;
+        }
+        
+        .input-div>div {
+            position: relative;
+            height: 45px;
+        }
+        
+        .input-div>div>h5 {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #fff;
+            font-size: 18px;
+            transition: .3s;
+            font-weight: 300;
+        }
+        
+        .input {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            font-weight: 300;
+            border: none;
+            outline: none;
+            background: none;
+            padding: 0.5rem 0.7rem;
+            font-size: 1.2rem;
+            color: #fff;
+            font-family: 'Rubik', sans-serif;
+        }
+        
+        a {
+            display: block;
+            text-align: right;
+            text-decoration: none;
+            color: #C8CAD7;
+            font-size: 0.9rem;
+            transition: .3s;
+        }
+        
+        a:hover {
+            color: #fff;
+        }
+        
+        .btn {
+            display: block;
+            width: 100%;
+            height: 50%;
+            border-radius: 3px;
+            margin: 1rem 0;
+            font-size: 1.2rem;
+            cursor: pointer;
+            position: relative;
+            padding: 13px 18px;
+            outline: none;
+            border: none;
+            letter-spacing: 2px;
+            background-image: -moz-linear-gradient( 122deg, #2CA8FF 0%, #1A69A1 100%);
+            background-image: -webkit-linear-gradient( 122deg, #2CA8FF 0%, #1A69A1 100%);
+            background-image: -ms-linear-gradient( 122deg, #2CA8FF 0%, #1A69A1 100%);
+            background-image: linear-gradient( 122deg, #2CA8FF 0%, #1A69A1 100%);
+            font-family: 'Rubik', sans-serif;
+            color: #fff;
+            transition: .5s;
+            text-transform: uppercase;
+            box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn:hover {
+            top: 2px;
+            background-position: right;
+        }
+        
+        .btn:active {
+            top: 5px;
+        }
+        
+        @media screen and (max-width: 1050px) {
+            .container {
+                grid-gap: 5rem;
+            }
+        }
+        
+        @media screen and (max-width: 1000px) {
+            form {
+                width: 290px;
+            }
+            form h2 {
+                font-size: 2.4rem;
+                margin: 8px 0;
+            }
+            .img img {
+                width: 400px;
+            }
+        }
+        
+        @media screen and (max-width: 900px) {
+            .img {
+                display: none;
+            }
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .login-container {
+                justify-content: center;
+            }
+        }
+        
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container" id="#container">
+        <div class="img">
+            <img src="img/undraw_personalization_triu.svg" alt="img">
+        </div>
+
+
+
+        <div class="login-container">
+            <form action="#" method="POST">
+                <img class="avatar" src="img/undraw_profile_pic_ic5t(1).svg" alt="img" width="180px">
+                <h2>User Login</h2>
+                <div class="input-div one ">
+                    <div class="i">
+                        <i class="far fa-user"></i>
+                    </div>
+                    <div>
+                        <h5>Student ID</h5>
+                        <input class="input" type="number" oninvalid="this.setCustomValidity('Enter a Your STID')" oninput="this.setCustomValidity('')">
+                    </div>
+
+                </div>
+                <div class="input-div two">
+                    <div class="i">
+                        <i class="fas fa-lock">
+
+                        </i>
+                    </div>
+                    <div>
+                        <h5>Password</h5>
+                        <input class="input" type="password" oninvalid="this.setCustomValidity('Enter a Valid Password')" oninput="this.setCustomValidity('')">
+                    </div>
+                </div>
+                <a href="#">Forgot Password?</a>
+                <input type="submit" class="btn" value="Login">
+            </form>
+        </div>
+    </div>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/1911436ffb.js" crossorigin="anonymous"></script>
+
+    <script>
+        const inputs = document.querySelectorAll('.input');
+
+
+        function focusFunc() {
+            let parent = this.parentNode.parentNode;
+            parent.classList.add('focus');
+        };
+
+        function blurFunc() {
+            let parent = this.parentNode.parentNode;
+            if (this.value == "") {
+                parent.classList.remove('focus');
+            }
+
+        };
+
+
+
+        inputs.forEach(input => {
+            input.addEventListener('focus', focusFunc);
+            input.addEventListener('blur', blurFunc);
+        });
+    </script>
+</body>
+
+</html>
