@@ -71,9 +71,9 @@
         }
         
         form h2 {
-            font-size: 2.9rem;
+            font-size: 2.4rem;
             text-transform: uppercase;
-            margin: 15px 0;
+            margin: 10px 0;
             font-weight: 300;
             color: whitesmoke;
             font-family: inherit;
@@ -87,7 +87,7 @@
             position: relative;
             display: grid;
             grid-template-columns: 7% 93%;
-            margin: 12px 0;
+            margin: 10px 0;
             padding: 5px 0;
             border-bottom: 2px solid #d9d9d9;
         }
@@ -117,7 +117,8 @@
         
         .input-div.focus div h5 {
             top: -5px;
-            font-size: 15px;
+            font-size: 12px;
+            color: #fff;
         }
         
         .input-div.focus:after,
@@ -222,6 +223,10 @@
             top: 5px;
         }
         
+        .signInsted {
+            display: none;
+        }
+        
         @media screen and (max-width: 1050px) {
             .container {
                 grid-gap: 5rem;
@@ -245,6 +250,12 @@
             .img {
                 display: none;
             }
+            .btn {
+                margin: 0;
+            }
+            .signInsted {
+                display: block;
+            }
             .container {
                 grid-template-columns: 1fr;
             }
@@ -259,7 +270,10 @@
 
     <div class="container" id="#container">
         <div class="img">
+            <a href="../index.html" style="margin-top: -70%; width: 150px;margin-left: 8%;margin-right: -150px;"><i class="fas fa-long-arrow-alt-left"></i> Back to Homepage</a>
+
             <img src="img/undraw_add_user_ipe3.svg" alt="img">
+            <p style="margin-top: 60%; width: 150px;margin-left:-130px;color: #D9D9D9;">Already a Member?<a href="./user login.html">Sign In <i class="fas fa-long-arrow-alt-right"></i></a></p>
         </div>
 
 
@@ -342,8 +356,10 @@
                     </div>
                 </div>
 
+                <input type="checkbox" style="margin-left:-27%; ">
+                <span style="color: #fff;">I accept your</span> <span><a href="#" class="terms" style="color: #fff; border-bottom: 2px solid #1A69A1 ; display: inline;">Terms and Conditions</a></span></p>
 
-                <a href="./user login.html">Sign In Instead <span><i class="fas fa-arrow-right"></i></span></a>
+                <a href="./user login.html" class="signInsted" style="margin-top: 5px; margin-bottom: 4px;">Sign In Instead <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
                 <input type="submit" class="btn" value="Sign Up">
             </form>
         </div>

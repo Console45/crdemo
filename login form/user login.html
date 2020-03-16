@@ -218,6 +218,10 @@
             top: 5px;
         }
         
+        .signup {
+            display: none;
+        }
+        
         @media screen and (max-width: 1050px) {
             .container {
                 grid-gap: 5rem;
@@ -247,6 +251,9 @@
             .login-container {
                 justify-content: center;
             }
+            .signup {
+                display: block;
+            }
         }
         
         input[type=number] {
@@ -258,8 +265,13 @@
 <body>
 
     <div class="container" id="#container">
+
         <div class="img">
+            <a href="../index.html" style="margin-top: -80%; width: 150px;margin-left: 8%;margin-right: -15px;"><i class="fas fa-home"></i> Home</a>
+
             <img src="img/undraw_personalization_triu.svg" alt="img">
+            <p style="margin-top: 75%; width: 150px;margin-left:-130px;color: #fff;">Are You New?<a href="./user login.html"><i class="fas fa-long-arrow-alt-left"></i> Sign Up</a></p>
+
         </div>
 
 
@@ -290,6 +302,11 @@
                     </div>
                 </div>
                 <a href="#">Forgot Password?</a>
+
+                <input type="checkbox" style="margin-left:-40%; ">
+                <span style="color: #fff; margin-top: 5px;">Remember My device</span>
+
+                <p class="signup" style="margin-top: 10px; width: 150px;margin-left:-20px;color: #fff;">Are You New?<a href="./user register.html"><i class="fas fa-long-arrow-alt-left"></i><span style="border-bottom: 2px solid #1A69A1;"> Sign Up</span></a></p>
                 <input type="submit" class="btn" value="Login">
             </form>
         </div>
