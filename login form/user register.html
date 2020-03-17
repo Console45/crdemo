@@ -225,8 +225,6 @@
         
         .signInsted {
             display: none;
-            margin-top: 10px;
-            margin-bottom: 10px;
         }
         
         .first-group {
@@ -260,6 +258,9 @@
             .img img {
                 width: 400px;
             }
+            #terms {
+                margin-right: -18%;
+            }
         }
         
         @media screen and (max-width: 900px) {
@@ -271,6 +272,9 @@
             }
             .signInsted {
                 display: block;
+            }
+            #terms {
+                margin-right: -20%;
             }
             .container {
                 grid-template-columns: 1fr;
@@ -301,11 +305,11 @@
                     <section class="first-group">
                         <h2>Sign Up</h2>
                         <p style="color: #fff; background-color: #3AD29F; height: 40px; padding: 10px;">Lets Get Started</p>
-                        <div class="input-div one ">
+                        <div class="input-div one " style="margin-top: 8px;" z>
                             <div class="i">
-
+                                <i class="far fa-user"></i>
                             </div>
-                            <div style="margin-top: 8px;">
+                            <div>
                                 <h5>Full Name</h5>
                                 <input class="input" type="text" required oninvalid="this.setCustomValidity('Enter your full name')" oninput="this.setCustomValidity('')">
                             </div>
@@ -313,7 +317,7 @@
                         </div>
                         <div class="input-div one">
                             <div class="i">
-
+                                <i class="fas fa-envelope"></i>
                             </div>
                             <div>
                                 <h5>Student Email</h5>
@@ -322,6 +326,7 @@
                         </div>
                         <div class="input-div one">
                             <div class="i">
+                                <i class="far fa-id-badge"></i>
 
                             </div>
                             <div>
@@ -331,7 +336,7 @@
                         </div>
                         <div class="input-div one">
                             <div class="i">
-
+                                <i class="fas fa-lock"></i>
                             </div>
                             <div>
                                 <h5>Password</h5>
@@ -340,7 +345,7 @@
                         </div>
                         <div class="input-div one">
                             <div class="i">
-
+                                <i class="fas fa-lock"></i>
                             </div>
                             <div>
                                 <h5>Confirm Password</h5>
@@ -350,6 +355,8 @@
                         <a href="#" class="btn" id="next" style="width: 35%; padding: 7px; font-size: 20px; margin-left: 60%; font-weight: 100;">
                             Next <i class="fas fa-long-arrow-alt-right"></i>
                         </a>
+                        <a href="./user login.html" class="signInsted" style="margin-right: 250px; width: 120px;">Sign In Instead <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+
 
                     </section>
 
@@ -357,51 +364,51 @@
                     <section class="second-group">
                         <p style="color: #fff; background-color: #3AD29F; height: 40px; margin-top: 5px;  padding: 10px;">Continue Your Registration</p>
 
-                        <div class="input-div one">
+                        <div class="input-div one" style="margin-top: 8px;">
 
 
                             <div class="i">
+                                <i class="fas fa-hotel "></i>
 
                             </div>
-                            <div style="margin-top: 8px;">
+                            <div>
                                 <h5>Hall of Residence</h5>
-                                <input class="input" type="text" required oninvalid="this.setCustomValidity('Enter a Valid Password')" oninput="this.setCustomValidity('')">
+                                <input class="input " type="text " required oninvalid="this.setCustomValidity( 'Enter your Hall of Residence') " oninput="this.setCustomValidity( '') ">
                             </div>
                         </div>
-                        <div class="input-div one">
-                            <div class="i">
-
+                        <div class="input-div one ">
+                            <div class="i ">
+                                <i class="fas fa-graduation-cap "></i>
                             </div>
                             <div>
                                 <h5>Level</h5>
-                                <input class="input" type="number" required oninvalid="this.setCustomValidity('Enter a Valid Password')" oninput="this.setCustomValidity('')">
+                                <input class="input " type="number " required oninvalid="this.setCustomValidity( 'Enter your Level') " oninput="this.setCustomValidity( '') ">
                             </div>
                         </div>
-                        <div class="input-div one">
-                            <div class="i">
-
+                        <div class="input-div one ">
+                            <div class="i ">
+                                <i class="fas fa-university "></i>
                             </div>
                             <div>
                                 <h5>Course</h5>
-                                <input class="input" type="text" required oninvalid="this.setCustomValidity('Enter a Valid Password')" oninput="this.setCustomValidity('')">
+                                <input class="input " type="text " required oninvalid="this.setCustomValidity( 'Enter your Course') " oninput="this.setCustomValidity( '') ">
                             </div>
                         </div>
-                        <div class="input-div one">
-                            <div class="i">
-
+                        <div class="input-div one ">
+                            <div class="i ">
+                                <i class="fas fa-phone "></i>
                             </div>
                             <div>
                                 <h5>Phone</h5>
-                                <input class="input" type="tel" required oninvalid="this.setCustomValidity('Enter a Valid Password')" oninput="this.setCustomValidity('')">
+                                <input class="input " type="tel " required oninvalid="this.setCustomValidity( 'Enter a Valid Phone Number') " oninput="this.setCustomValidity( '') ">
                             </div>
                         </div>
 
-                        <input type="checkbox" id="checkbo" style="margin-left:-27%; ">
-                        <span id="terms"><span style="color: #fff; margin-bottom: 10px;">I accept your</span> <span><a href="#" class="terms" style="color: #fff; border-bottom: 2px solid #1A69A1 ; display: inline;">Terms and Conditions</a></span></span>
+                        <input type="checkbox" id="checkbo " style="margin-left:-27%; ">
+                        <span id="terms "><span style="color: #fff; margin-bottom: 10px; ">I accept your</span> <span><a href="# " class="terms " style="color: #fff; border-bottom: 2px solid #1A69A1 ; display: inline; ">Terms and Conditions</a></span></span>
 
-                        <a href="./user login.html" class="signInsted" style="margin-top: 5px; margin-bottom: 4px;">Sign In Instead <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
-                        <a href="#" class="btn" id="back" style="width: 35%; margin-bottom: 10px ; margin-top: 10px; padding: 7px;  font-size: 20px; margin-left: 0; font-weight: 100;"><i class="fas fa-long-arrow-alt-left"></i> Back</a>
-                        <input type="submit" style="margin-top: 30px; background-image: linear-gradient( 122deg, #3AD29F 0%, #2A9A74 100%);" class="btn" value="Sign Up">
+                        <a href="# " class="btn" id="back" style="width: 35%; margin-bottom: 10px ; margin-top: 10px; padding: 7px; font-size: 20px; margin-left: 0; font-weight: 100; "><i class="fas fa-long-arrow-alt-left "></i> Back</a>
+                        <input type="submit " style="margin-top: 20px; background-image: linear-gradient( 122deg, #3AD29F 0%, #2A9A74 100%); " class="btn " value="Sign Up ">
 
                     </section>
 
@@ -410,54 +417,54 @@
             </form>
         </div>
     </div>
-    <script src="../js/jquery-3.2.1.min.js"></script>
-    <script src="./js/jquery.steps.min.js"></script>
+    <script src="../js/jquery-3.2.1.min.js "></script>
+    <script src="./js/jquery.steps.min.js "></script>
     <!-- <script>
         $('#form-total').steps({
-            headerTag: "h3",
-            bodyTag: "section",
-            transitionEffect: "slideLeft",
+            headerTag: "h3 ",
+            bodyTag: "section ",
+            transitionEffect: "slideLeft ",
             autoFocus: true
         })
     </script> -->
 
-    <script src="https://kit.fontawesome.com/1911436ffb.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1911436ffb.js " crossorigin="anonymous "></script>
 
     <script>
         $('#next').click(() => {
 
             $('.second-group').css({
-                display: "block",
-                opacity: "1",
-                zIndex: "5",
-                animation: "show 0.6s",
-                transition: "2s"
+                display: "block ",
+                opacity: "1 ",
+                zIndex: "5 ",
+                animation: "show 0.6s ",
+                transition: "2s "
             })
             $('.first-group').css({
-                display: "none",
-                opacity: "0",
+                display: "none ",
+                opacity: "0 ",
 
-                animation: "show 0.6s",
-                transition: "2s"
+                animation: "show 0.6s ",
+                transition: "2s "
 
             })
         })
         $('#back').click(() => {
 
             $('.second-group').css({
-                display: "none",
-                // transform: "translateY(-50%)",
-                opacity: "0",
-                zIndex: "5",
-                animation: "show 0.6s",
-                transition: "2s"
+                display: "none ",
+                // transform: "translateY(-50%) ",
+                opacity: "0 ",
+                zIndex: "5 ",
+                animation: "show 0.6s ",
+                transition: "2s "
             })
             $('.first-group').css({
-                display: "block",
-                opacity: "1",
+                display: "block ",
+                opacity: "1 ",
 
-                animation: "show 0.6s",
-                transition: "2s"
+                animation: "show 0.6s ",
+                transition: "2s "
 
             })
         })
@@ -471,7 +478,7 @@
 
         function blurFunc() {
             let parent = this.parentNode.parentNode;
-            if (this.value == "") {
+            if (this.value == " ") {
                 parent.classList.remove('focus');
             }
 
