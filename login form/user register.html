@@ -225,6 +225,22 @@
         
         .signInsted {
             display: none;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .first-group {
+            transition-property: display;
+            transition-duration: 2s;
+            display: block;
+            opacity: 1;
+        }
+        
+        .second-group {
+            transition: .7s;
+            display: none;
+            font-family: 'Rubik', sans-serif;
+            opacity: 0;
         }
         
         @media screen and (max-width: 1050px) {
@@ -281,94 +297,170 @@
         <div class="login-container">
             <form action="#" method="POST">
                 <img class="avatar" src="img/undraw_profile_pic_ic5t(1).svg" alt="img">
-                <h2>Sign Up</h2>
-                <div class="input-div one ">
-                    <div class="i">
+                <div id="form-total">
+                    <section class="first-group">
+                        <h2>Sign Up</h2>
+                        <p style="color: #fff; background-color: #3AD29F; height: 40px; padding: 10px;">Lets Get Started</p>
+                        <div class="input-div one ">
+                            <div class="i">
 
-                    </div>
-                    <div>
-                        <h5>Full Name</h5>
-                        <input class="input" type="text" required oninvalid="this.setCustomValidity('Enter your full name')" oninput="this.setCustomValidity('')">
-                    </div>
+                            </div>
+                            <div style="margin-top: 8px;">
+                                <h5>Full Name</h5>
+                                <input class="input" type="text" required oninvalid="this.setCustomValidity('Enter your full name')" oninput="this.setCustomValidity('')">
+                            </div>
+
+                        </div>
+                        <div class="input-div one">
+                            <div class="i">
+
+                            </div>
+                            <div>
+                                <h5>Student Email</h5>
+                                <input class="input" type="email" required oninvalid="this.setCustomValidity('Enter a Valid Student Email')" oninput="this.setCustomValidity('')">
+                            </div>
+                        </div>
+                        <div class="input-div one">
+                            <div class="i">
+
+                            </div>
+                            <div>
+                                <h5>Student ID</h5>
+                                <input class="input" type="number" required oninvalid="this.setCustomValidity('Enter a Valid Student ID')" oninput="this.setCustomValidity('')">
+                            </div>
+                        </div>
+                        <div class="input-div one">
+                            <div class="i">
+
+                            </div>
+                            <div>
+                                <h5>Password</h5>
+                                <input class="input" type="password" required oninvalid="this.setCustomValidity('Enter a Valid Password')" oninput="this.setCustomValidity('')">
+                            </div>
+                        </div>
+                        <div class="input-div one">
+                            <div class="i">
+
+                            </div>
+                            <div>
+                                <h5>Confirm Password</h5>
+                                <input class="input" type="password" required oninvalid="this.setCustomValidity('Confirm Your Password')" oninput="this.setCustomValidity('')">
+                            </div>
+                        </div>
+                        <a href="#" class="btn" id="next" style="width: 35%; padding: 7px; font-size: 20px; margin-left: 60%; font-weight: 100;">
+                            Next <i class="fas fa-long-arrow-alt-right"></i>
+                        </a>
+
+                    </section>
+
+
+                    <section class="second-group">
+                        <p style="color: #fff; background-color: #3AD29F; height: 40px; margin-top: 5px;  padding: 10px;">Continue Your Registration</p>
+
+                        <div class="input-div one">
+
+
+                            <div class="i">
+
+                            </div>
+                            <div style="margin-top: 8px;">
+                                <h5>Hall of Residence</h5>
+                                <input class="input" type="text" required oninvalid="this.setCustomValidity('Enter a Valid Password')" oninput="this.setCustomValidity('')">
+                            </div>
+                        </div>
+                        <div class="input-div one">
+                            <div class="i">
+
+                            </div>
+                            <div>
+                                <h5>Level</h5>
+                                <input class="input" type="number" required oninvalid="this.setCustomValidity('Enter a Valid Password')" oninput="this.setCustomValidity('')">
+                            </div>
+                        </div>
+                        <div class="input-div one">
+                            <div class="i">
+
+                            </div>
+                            <div>
+                                <h5>Course</h5>
+                                <input class="input" type="text" required oninvalid="this.setCustomValidity('Enter a Valid Password')" oninput="this.setCustomValidity('')">
+                            </div>
+                        </div>
+                        <div class="input-div one">
+                            <div class="i">
+
+                            </div>
+                            <div>
+                                <h5>Phone</h5>
+                                <input class="input" type="tel" required oninvalid="this.setCustomValidity('Enter a Valid Password')" oninput="this.setCustomValidity('')">
+                            </div>
+                        </div>
+
+                        <input type="checkbox" id="checkbo" style="margin-left:-27%; ">
+                        <span id="terms"><span style="color: #fff; margin-bottom: 10px;">I accept your</span> <span><a href="#" class="terms" style="color: #fff; border-bottom: 2px solid #1A69A1 ; display: inline;">Terms and Conditions</a></span></span>
+
+                        <a href="./user login.html" class="signInsted" style="margin-top: 5px; margin-bottom: 4px;">Sign In Instead <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                        <a href="#" class="btn" id="back" style="width: 35%; margin-bottom: 10px ; margin-top: 10px; padding: 7px;  font-size: 20px; margin-left: 0; font-weight: 100;"><i class="fas fa-long-arrow-alt-left"></i> Back</a>
+                        <input type="submit" style="margin-top: 30px; background-image: linear-gradient( 122deg, #3AD29F 0%, #2A9A74 100%);" class="btn" value="Sign Up">
+
+                    </section>
 
                 </div>
-                <div class="input-div one">
-                    <div class="i">
 
-                    </div>
-                    <div>
-                        <h5>Student Email</h5>
-                        <input class="input" type="email" required oninvalid="this.setCustomValidity('Enter a Valid Student Email')" oninput="this.setCustomValidity('')">
-                    </div>
-                </div>
-                <div class="input-div one">
-                    <div class="i">
-
-                    </div>
-                    <div>
-                        <h5>Student ID</h5>
-                        <input class="input" type="number" required oninvalid="this.setCustomValidity('Enter a Valid Student ID')" oninput="this.setCustomValidity('')">
-                    </div>
-                </div>
-                <div class="input-div one">
-                    <div class="i">
-
-                    </div>
-                    <div>
-                        <h5>Password</h5>
-                        <input class="input" type="password" required oninvalid="this.setCustomValidity('Enter a Valid Password')" oninput="this.setCustomValidity('')">
-                    </div>
-                </div>
-                <div class="input-div one">
-                    <div class="i">
-
-                    </div>
-                    <div>
-                        <h5>Hall of Residence</h5>
-                        <input class="input" type="text" required oninvalid="this.setCustomValidity('Enter a Valid Password')" oninput="this.setCustomValidity('')">
-                    </div>
-                </div>
-                <div class="input-div one">
-                    <div class="i">
-
-                    </div>
-                    <div>
-                        <h5>Level</h5>
-                        <input class="input" type="number" required oninvalid="this.setCustomValidity('Enter a Valid Password')" oninput="this.setCustomValidity('')">
-                    </div>
-                </div>
-                <div class="input-div one">
-                    <div class="i">
-
-                    </div>
-                    <div>
-                        <h5>Course</h5>
-                        <input class="input" type="text" required oninvalid="this.setCustomValidity('Enter a Valid Password')" oninput="this.setCustomValidity('')">
-                    </div>
-                </div>
-                <div class="input-div one">
-                    <div class="i">
-
-                    </div>
-                    <div>
-                        <h5>Phone</h5>
-                        <input class="input" type="tel" required oninvalid="this.setCustomValidity('Enter a Valid Password')" oninput="this.setCustomValidity('')">
-                    </div>
-                </div>
-
-                <input type="checkbox" style="margin-left:-27%; ">
-                <span style="color: #fff;">I accept your</span> <span><a href="#" class="terms" style="color: #fff; border-bottom: 2px solid #1A69A1 ; display: inline;">Terms and Conditions</a></span></p>
-
-                <a href="./user login.html" class="signInsted" style="margin-top: 5px; margin-bottom: 4px;">Sign In Instead <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
-                <input type="submit" class="btn" value="Sign Up">
             </form>
         </div>
     </div>
     <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="./js/jquery.steps.min.js"></script>
+    <!-- <script>
+        $('#form-total').steps({
+            headerTag: "h3",
+            bodyTag: "section",
+            transitionEffect: "slideLeft",
+            autoFocus: true
+        })
+    </script> -->
 
     <script src="https://kit.fontawesome.com/1911436ffb.js" crossorigin="anonymous"></script>
 
     <script>
+        $('#next').click(() => {
+
+            $('.second-group').css({
+                display: "block",
+                opacity: "1",
+                zIndex: "5",
+                animation: "show 0.6s",
+                transition: "2s"
+            })
+            $('.first-group').css({
+                display: "none",
+                opacity: "0",
+
+                animation: "show 0.6s",
+                transition: "2s"
+
+            })
+        })
+        $('#back').click(() => {
+
+            $('.second-group').css({
+                display: "none",
+                // transform: "translateY(-50%)",
+                opacity: "0",
+                zIndex: "5",
+                animation: "show 0.6s",
+                transition: "2s"
+            })
+            $('.first-group').css({
+                display: "block",
+                opacity: "1",
+
+                animation: "show 0.6s",
+                transition: "2s"
+
+            })
+        })
         const inputs = document.querySelectorAll('.input');
 
 
