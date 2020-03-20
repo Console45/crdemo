@@ -14,6 +14,7 @@
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
     <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/cssanimation.min.css">
 
 
     <title></title>
@@ -228,7 +229,7 @@
             }
         }
         
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1300px) {
             form {
                 width: 290px;
             }
@@ -239,20 +240,29 @@
             .img img {
                 width: 400px;
             }
+            #terms {
+                margin-right: -18%;
+            }
         }
         
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: 1000px) {
             .img {
                 display: none;
+            }
+            .btn {
+                margin: 0;
+            }
+            .signInsted {
+                display: block;
+            }
+            #terms {
+                margin-right: -20%;
             }
             .container {
                 grid-template-columns: 1fr;
             }
             .login-container {
                 justify-content: center;
-            }
-            .signup {
-                display: block;
             }
         }
         
@@ -269,7 +279,7 @@
         <div class="img">
             <a href="../index.html" style="margin-top: -75%; width: 150px;margin-left: -10%;margin-right: -15px;"><i class="fas fa-home"></i> Home</a>
 
-            <img src="img/undraw_personalization_triu.svg" alt="img">
+            <img src="img/undraw_personalization_triu.svg" alt="img" class="cssanimation fadeInLeft">
             <p style="margin-top: 80%; width: 150px;margin-left:-200px;color: #fff;">Are You New?<a href="./user register.html"><i class="fas fa-long-arrow-alt-left"></i> Sign Up</a></p>
 
         </div>
@@ -277,7 +287,7 @@
 
 
         <div class="login-container">
-            <form action="#" method="POST">
+            <form action="#" method="POST" class="cssanimation fadeInTop">
                 <img class="avatar" src="img/undraw_profile_pic_ic5t(1).svg" alt="img" width="180px">
                 <h2>User Login</h2>
                 <p style="color: #fff; background-color: #3AD29F; height: 40px; padding: 10px; margin-bottom: 10px;"><i class="far fa-smile"></i> Welcome Back</p>
@@ -314,6 +324,7 @@
             </form>
         </div>
     </div>
+    <script src="js/letteranimation.min.js"></script>
     <script src="../js/jquery-3.2.1.min.js"></script>
 
     <script src="https://kit.fontawesome.com/1911436ffb.js" crossorigin="anonymous"></script>

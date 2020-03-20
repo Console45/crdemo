@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="css/cssanimation.min.css">
     <!-- Bootstrap -->
 
 
@@ -224,7 +225,7 @@
             }
         }
         
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1300px) {
             form {
                 width: 290px;
             }
@@ -235,11 +236,23 @@
             .img img {
                 width: 400px;
             }
+            #terms {
+                margin-right: -18%;
+            }
         }
         
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: 1000px) {
             .img {
                 display: none;
+            }
+            .btn {
+                margin: 0;
+            }
+            .signInsted {
+                display: block;
+            }
+            #terms {
+                margin-right: -20%;
             }
             .container {
                 grid-template-columns: 1fr;
@@ -253,16 +266,16 @@
 
 <body>
 
-    <div class="container" id="#container">
+    <div class="container " id="#container">
         <div class="img">
-            <img src="img/undraw_dashboard_nklg.svg" alt="img">
+            <img src="img/undraw_dashboard_nklg.svg" alt="img" class="cssanimation fadeInLeft">
         </div>
 
 
 
         <div class="login-container">
-            <form action="#" method="POST">
-                <img class="avatar" src="img/undraw_male_avatar_323b.svg" alt="img">
+            <form action="#" method="POST" class="cssanimation fadeInTop">
+                <img class="avatar " src="img/undraw_male_avatar_323b.svg" alt="img">
                 <h2>Admin Login</h2>
                 <div class="input-div one ">
                     <div class="i">
@@ -291,6 +304,7 @@
         </div>
     </div>
     <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="./js/letteranimation.min.js"></script>
 
     <script src="https://kit.fontawesome.com/1911436ffb.js" crossorigin="anonymous"></script>
 
