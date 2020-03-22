@@ -335,6 +335,18 @@
             }
         }
         
+        #dob {
+            top: -5px;
+            font-size: 12px;
+        }
+        
+        @media screen and (max-width: 1024px) {
+            #dob {
+                top: 50%;
+                font-size: 18px;
+            }
+        }
+        
         @media screen and (max-width: 1000px) {
             form {
                 width: 290px;
@@ -402,7 +414,7 @@
                                 <i class="fas fa-calendar-alt"></i>
                             </div>
                             <div>
-                                <h5 style=" top: -5px; font-size: 12px;"> Date Of Birth </h5>
+                                <h5 id="dob"> Date Of Birth </h5>
                                 <input class="input" type="date" required oninvalid="this.setCustomValidity('Enter your full name')" oninput="this.setCustomValidity('')">
                             </div>
 
