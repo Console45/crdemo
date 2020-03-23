@@ -14,8 +14,7 @@
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/cssanimation.min.css">
-
+    <link rel="stylesheet" href="./css/cssanimation.min.css">
 
     <title></title>
     <style>
@@ -223,13 +222,43 @@
             display: none;
         }
         
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+        
+        #resetPass {
+            display: none;
+        }
+        
+        .forgot-pass-p {
+            cursor: pointer;
+        }
+        
+        #resetPassDiv {
+            opacity: 0;
+            transition: opacity 3s;
+        }
+        
+        #signInDiv {
+            transition: opacity 3s;
+        }
+        
+        #userlogin3 {
+            color: #fff;
+            margin-top: 5px
+        }
+        
+        #checkbo {
+            margin-left: -184px;
+        }
+        
         @media screen and (max-width: 1050px) {
             .container {
                 grid-gap: 5rem;
             }
         }
         
-        @media screen and (max-width: 1300px) {
+        @media screen and (max-width: 1000px) {
             form {
                 width: 290px;
             }
@@ -240,23 +269,14 @@
             .img img {
                 width: 400px;
             }
-            #terms {
-                margin-right: -18%;
+            #checkbo {
+                margin-left: -115px;
             }
         }
         
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 900px) {
             .img {
                 display: none;
-            }
-            .btn {
-                margin: 0;
-            }
-            .signInsted {
-                display: block;
-            }
-            #terms {
-                margin-right: -20%;
             }
             .container {
                 grid-template-columns: 1fr;
@@ -264,10 +284,9 @@
             .login-container {
                 justify-content: center;
             }
-        }
-        
-        input[type=number] {
-            -moz-appearance: textfield;
+            .signup {
+                display: block;
+            }
         }
     </style>
 </head>
@@ -277,54 +296,92 @@
     <div class="container" id="#container">
 
         <div class="img">
-            <a href="../index.html" style="margin-top: -75%; width: 150px;margin-left: -10%;margin-right: -15px;"><i class="fas fa-home"></i> Home</a>
+            <a href="../index.html" class="cssanimation fadeInTop" style="margin-top: -80%; width: 150px;margin-left: 8%;margin-right: -15px;"><i class="fas fa-home"></i> Home</a>
 
-            <img src="img/undraw_personalization_triu.svg" alt="img" class="cssanimation fadeInLeft">
-            <p style="margin-top: 80%; width: 150px;margin-left:-200px;color: #fff;">Are You New?<a href="./user register.html"><i class="fas fa-long-arrow-alt-left"></i> Sign Up</a></p>
+            <img class="cssanimation fadeInLeft" src="img/undraw_personalization_triu.svg" alt="img">
+            <p class="cssanimation fadeInBottom" style="margin-top: 75%; width: 150px;margin-left:-130px;color: #fff;">Are You New?<a href="./user register.html"><i class="fas fa-long-arrow-alt-left"></i> Sign Up</a></p>
 
         </div>
 
 
 
         <div class="login-container">
-            <form action="#" method="POST" class="cssanimation fadeInTop">
-                <img class="avatar" src="img/undraw_profile_pic_ic5t(1).svg" alt="img" width="180px">
-                <h2>User Login</h2>
-                <p style="color: #fff; background-color: #3AD29F; height: 40px; padding: 10px; margin-bottom: 10px;"><i class="far fa-smile"></i> Welcome Back</p>
+            <!-- Sign in -->
+            <div id="signInDiv">
+                <form action="#" class="cssanimation fadeInTop" method="POST" id="userLogin">
+                    <img class="avatar" src="img/undraw_profile_pic_ic5t(1).svg" alt="img" width="180px">
 
-                <div class="input-div one ">
-                    <div class="i">
-                        <!-- <i class="far fa-user"></i> -->
-                        <i class="far fa-id-badge"></i>
-                    </div>
-                    <div>
-                        <h5>Student ID</h5>
-                        <input class="input" type="number" oninvalid="this.setCustomValidity('Enter a Your STID')" oninput="this.setCustomValidity('')">
-                    </div>
+                    <h2 id="formtitle">User Login</h2>
+                    <p style="color: #fff; background-color: #3AD29F; height: 40px; padding: 10px; margin-bottom: 10px;"><i class="far fa-smile" aria-hidden="true"></i> Welcome Back</p>
+                    <div class="input-div one ">
+                        <div class="i">
+                            <i class="far fa-user"></i>
+                        </div>
+                        <div>
+                            <h5>Student ID</h5>
+                            <input class="input" type="number" oninvalid="this.setCustomValidity('Enter a Your STID')" oninput="this.setCustomValidity('')">
+                        </div>
 
-                </div>
-                <div class="input-div two">
-                    <div class="i">
-                        <i class="fas fa-lock">
+                    </div>
+                    <div class="input-div two" id="userlogin2">
+                        <div class="i">
+                            <i class="fas fa-lock">
 
                         </i>
+                        </div>
+                        <div>
+                            <h5>Password</h5>
+                            <input class="input" type="password" oninvalid="this.setCustomValidity('Enter a Valid Password')" oninput="this.setCustomValidity('')">
+                        </div>
                     </div>
-                    <div>
-                        <h5>Password</h5>
-                        <input class="input" type="password" oninvalid="this.setCustomValidity('Enter a Valid Password')" oninput="this.setCustomValidity('')">
+
+
+                    <input type="checkbox" id="checkbo">
+                    <span id="userlogin3">Remember My device</span>
+                    <br /><a class="forgot-pass-p" onclick="hideLogin()">Forgot Password?</a>
+
+                    <p class="signup" style="margin-top: 10px; width: 150px;margin-left:-20px;color: #fff;">Are You New?<a href="./user register.html"><i class="fas fa-long-arrow-alt-left"></i><span style="border-bottom: 2px solid #1A69A1;"> Sign Up</span></a></p>
+                    <input type="submit" class="btn" value="Login">
+                </form>
+            </div>
+
+            <!-- Forgot password -->
+            <div id="resetPassDiv">
+                <form action="#" method="POST" id="resetPass">
+
+
+                    <h2 id="formtitle">Forgot Password</h2>
+                    <p style="color: #fff; background-color: #3AD29F; height: 40px; padding: 10px; margin-bottom: 10px;">Lets Reset Your Password</p>
+
+                    <div class="input-div one ">
+                        <div class="i">
+                            <i class="far fa-user"></i>
+                        </div>
+                        <div>
+                            <h5>Student ID</h5>
+                            <input class="input" type="number" oninvalid="this.setCustomValidit y('Enter a Your STID')" oninput="this.setCustomValidity('')">
+                        </div>
+
                     </div>
-                </div>
-                <a href="#">Forgot Password?</a>
+                    <div class="input-div two" id="userlogin2">
+                        <div class="i">
+                            <i class="fas fa-envelope">
 
-                <input type="checkbox" style="margin-left:-40%; ">
-                <span style="color: #fff; margin-top: 5px; margin-bottom: 8px;">Remember My device</span>
-
-                <p class="signup" style="margin-top: 10px; width: 150px;margin-left: 48%;color: #fff;">Are You New?<a href="./user register.html"><i class="fas fa-long-arrow-alt-left"></i><span style="border-bottom: 2px solid #1A69A1;"> Sign Up</span></a></p>
-                <input type="submit" class="btn" value="Login">
-            </form>
+                        </i>
+                        </div>
+                        <div>
+                            <h5>Email</h5>
+                            <input class="input" type="password" oninvalid="this.setCustomValidity('Enter a Valid Email')" oninput="this.setCustomValidity('')">
+                        </div>
+                    </div>
+                    <br /><a class="forgot-pass-p" onclick="hideResetPass()"><i class="fas fa-long-arrow-alt-left"></i> Sign In</a>
+                    <p class="signup" style="margin-top: 10px; width: 150px;margin-left:-20px;color: #fff;">Are You New?<a href="./user register.html"><i class="fas fa-long-arrow-alt-left"></i><span style="border-bottom: 2px solid #1A69A1;"> Sign Up</span></a></p>
+                    <input type="submit" class="btn" value="Reset" id="resetbtn" onclick="getResetMsg()">
+                </form>
+            </div>
         </div>
     </div>
-    <script src="js/letteranimation.min.js"></script>
+    <script src="./js/letteranimation.min.js"></script>
     <script src="../js/jquery-3.2.1.min.js"></script>
 
     <script src="https://kit.fontawesome.com/1911436ffb.js" crossorigin="anonymous"></script>
@@ -352,6 +409,43 @@
             input.addEventListener('focus', focusFunc);
             input.addEventListener('blur', blurFunc);
         });
+
+        //hide login and show password reset
+        function hideLogin() {
+            document.getElementById('userLogin').style.display = "none";
+
+            document.getElementById('signInDiv').style.opacity = 0;
+            document.getElementById('resetPass').style.display = "block";
+
+            for (i = 0; i < 30; i++) {
+                document.getElementById('resetPassDiv').style.opacity = i;
+
+            }
+
+            for (i = 30; i > -1; i--) {
+                document.getElementById('signInDiv').style.opacity = i;
+            }
+        }
+
+
+        //hide password reset and show login
+        function hideResetPass() {
+            document.getElementById('userLogin').style.display = "block";
+            document.getElementById('resetPass').style.display = "none";
+            document.getElementById('resetPassDiv').style.opacity = 0;
+
+            for (i = 0; i < 30; i++) {
+                document.getElementById('signInDiv').style.opacity = i;
+            }
+
+            for (i = 30; i > -1; i--) {
+                document.getElementById('resetPassDiv').style.opacity = i;
+            }
+        }
+
+        function getResetMsg() {
+            alert("You will receive a confirmation email shortly.");
+        }
     </script>
 </body>
 

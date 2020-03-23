@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Campus Ride - Cashless Shuttle Service">
 
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Font -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
@@ -25,7 +25,12 @@
     <!-- Fontawesome CSS -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/cssanimation.min.css">
-   
+    <script type="text/javascript" src="js/scrolly.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            scrolly();
+        };
+    </script>
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
         var Tawk_API = Tawk_API || {},
@@ -90,13 +95,13 @@
             <div class="section-title">
                 <small>HIGHLIGHTS</small>
                 <hr style="width: 80%;">
-                <h3>All The Features You Need</h3>
+                <h3 data-aos="zoom-in">All The Features You Need</h3>
             </div>
 
 
             <div class="row">
                 <div class="col-12 col-lg-4">
-                    <div class="card features">
+                    <div class="card features" data-aos="fade-left">
                         <div class="card-body">
                             <div class="media">
                                 <span class="ti-face-smile  ti-3x mr-3"></span>
@@ -109,7 +114,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <div class="card features">
+                    <div class="card features" data-aos="fade-right">
                         <div class="card-body">
                             <div class="media">
                                 <span class=" mr-3"><img src="https://img.icons8.com/cotton/64/000000/mobile-payment--v3.png"></span>
@@ -122,7 +127,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <div class="card features">
+                    <div class="card features" data-aos="fade-left">
                         <div class="card-body">
                             <div class="media">
                                 <span class="ti-lock  ti-3x mr-3"></span>
@@ -147,14 +152,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-6">
-                    <div class="box-icon"><span class="ti-mobile gradient-fill ti-3x"></span></div>
-                    <h2>Discover our App</h2>
-                    <p class="mb-4"> Our app will be available on the Apple appStore and the Google play store soon. Simply Search for Campus Ride in the search</p>
-                    <a href="#discover" class="btn btn-primary disabled">Coming Soon...</a>
+                    <div class="box-icon" data-aos="fade-left"><span class="ti-mobile gradient-fill ti-3x"></span></div>
+                    <h2 data-aos="fade-up">Discover our App</h2>
+                    <p class="mb-4" data-aos="fade-up" data-aos-duration="1000"> Our app will be available on the Apple appStore and the Google play store soon. Simply Search for Campus Ride in the search</p>
+                    <a href="#discover" data-aos="fade-left" data-aos-duration="1000" class="btn btn-primary disabled">Coming Soon...</a>
                 </div>
             </div>
             <div class="perspective-phone">
-                <img src="images/perspective.png" alt="perspective phone" class="img-fluid">
+                <img src="images/perspective.png" data-aos="fade-right" alt="perspective phone" class="img-fluid">
             </div>
         </div>
 
@@ -167,7 +172,7 @@
             <div class="section-title">
                 <small>FEATURES</small>
                 <hr style="width: 80%;">
-                <h3>Do more with our app</h3>
+                <h3 data-aos="zoom-in">Do more with our app</h3>
             </div>
 
             <ul class="nav nav-tabs nav-justified" role="tablist">
@@ -184,8 +189,8 @@
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="bus_rides">
                     <div class="d-flex flex-column flex-lg-row">
-                        <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
-                        <div>
+                        <img src="images/graphic.png" data-aos="fade-right" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                        <div data-aos="fade-up" data-aos-duration="1000">
                             <h2>Get a bus ride with ease</h2>
                             <p class="lead">Our app will soon be available for android and apple users. </p>
                             <p>Simply search for Campus Ride in google play store on android and app store on ios.
@@ -197,20 +202,20 @@
                 </div>
                 <div class="tab-pane fade" id="payments">
                     <div class="d-flex flex-column flex-lg-row">
-                        <div>
+                        <div data-aos="fade-up" data-aos-duration="1000">
                             <h2>Mobile money is accepted from all networks</h2>
                             <p class="lead"> Pay for shuttle service without cash
                             </p>
                             <p> Pay for all your rides on campus without paying with physical cash. Just board the bus scan the payment Qr code and you are good to go.Login to checkout our web wallet and Qr code payment feature
                             </p>
                         </div>
-                        <img src="images/index2.jfif" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                        <img data-aos="fade-left" src="images/index2.jfif" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
                     </div>
                 </div>
                 <div class="tab-pane fade" id="history">
                     <div class="d-flex flex-column flex-lg-row">
-                        <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
-                        <div>
+                        <img data-aos="fade-right" src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                        <div data-aos="fade-up" data-aos-duration="1000">
                             <h2>Get to know your ride history</h2>
                             <p class="lead">Every ride counts, all your rides with us are available from day one till date . </p>
                             <p> Get to know your Ride History</p>
@@ -231,14 +236,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="images/dualphone.png" alt="dual phone" class="img-fluid">
+                    <img data-aos="fade-right" src="images/dualphone.png" alt="dual phone" class="img-fluid">
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
                     <div>
-                        <div class="box-icon"><span class="ti-rocket gradient-fill ti-3x"></span></div>
-                        <h2>Access Your Dashboard</h2>
-                        <p class="mb-4">Login to the web App to view your Account balance Account Info and Your Ride History</p>
-                        <a href="./login form/user login.html" class="btn btn-primary">Login</a></div>
+                        <div class="box-icon" data-aos="fade-left"><span class="ti-rocket gradient-fill ti-3x"></span></div>
+                        <h2 data-aos="fade-up">Access Your Dashboard</h2>
+                        <p class="mb-4" data-aos="fade-up" data-aos-duration="1000">Login to the web App to view your Account balance Account Info and Your Ride History</p>
+                        <a data-aos="fade-right" data-aos-duration="1000" href="./login form/user login.html" class="btn btn-primary">Login</a></div>
                 </div>
             </div>
 
@@ -260,30 +265,30 @@
                 <div class="col-md-8 d-flex align-items-center">
                     <ul class="list-unstyled ui-steps">
                         <li class="media">
-                            <div class="circle-icon mr-4">1</div>
+                            <div data-aos="fade-right" data-aos-duration="400" class="circle-icon mr-4">1</div>
                             <div class="media-body">
-                                <h5>Create an Account</h5>
-                                <p>Follow the easy prompts in the mobile app to create your free Campus Rides account </p>
+                                <h5 data-aos="fade-up">Create an Account</h5>
+                                <p data-aos="fade-up" data-aos-duration="1000">Follow the easy prompts in the mobile app to create your free Campus Rides account </p>
                             </div>
                         </li>
                         <li class="media my-4">
-                            <div class="circle-icon mr-4">2</div>
+                            <div data-aos="fade-right" data-aos-duration="600" class="circle-icon mr-4">2</div>
                             <div class="media-body">
-                                <h5>Pay Without Cash</h5>
-                                <p>Pay for the shuttle services with our cashless payment system. All network mobile money is accepted</p>
+                                <h5 data-aos="fade-up">Pay Without Cash</h5>
+                                <p data-aos="fade-up" data-aos-duration="1000">Pay for the shuttle services with our cashless payment system. All network mobile money is accepted</p>
                             </div>
                         </li>
                         <li class="media">
-                            <div class="circle-icon mr-4">3</div>
+                            <div data-aos="fade-right" data-aos-duration="800" class="circle-icon mr-4">3</div>
                             <div class="media-body">
-                                <h5>Enjoy your Ride</h5>
-                                <p>Sit, relax and enjoy your bus ride on campus </p>
+                                <h5 data-aos="fade-up">Enjoy your Ride</h5>
+                                <p data-aos="fade-up" data-aos-duration="1000">Sit, relax and enjoy your bus ride on campus </p>
                             </div>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <img src="images/iphonex.png" alt="iphone" class="img-fluid">
+                    <img data-aos="fade-left" src="images/iphonex.png" alt="iphone" class="img-fluid">
                 </div>
 
             </div>
@@ -299,34 +304,34 @@
             <div class="section-title">
                 <small>TESTIMONIALS</small>
                 <hr style="width: 80%;">
-                <h3>What our Customers Say</h3>
+                <h3 data-aos="zoom-in">What our Customers Say</h3>
             </div>
 
             <div class="testimonials owl-carousel">
                 <div class="testimonials-single">
-                    <img src="images/client.png" alt="client" class="client-img">
-                    <blockquote class="blockquote">
+                    <img data-aos="fade-right" src="images/client.png" alt="client" class="client-img">
+                    <blockquote data-aos="fade-left" class="blockquote">
                         I live very far from my lecture theatre, with this innovation by Campus Ride, I don't have to worry about missing the bus anymore
 
                     </blockquote>
-                    <h5 class="mt-4 mb-2">Abigail Asiedu</h5>
-                    <p class="text-primary">University Of Ghana</p>
+                    <h5 class="mt-4 mb-2" data-aos="fade-up">Abigail Asiedu</h5>
+                    <p class="text-primary" data-aos="fade-up" data-aos-duration="800">University Of Ghana</p>
                 </div>
                 <div class="testimonials-single">
-                    <img src="images/client.png" alt="client" class="client-img">
-                    <blockquote class="blockquote">
+                    <img data-aos="fade-right" src="images/client.png" alt="client" class="client-img">
+                    <blockquote data-aos="fade-left" class="blockquote">
                         Hurray!!! Good bye to waiting for busses.
                     </blockquote>
-                    <h5 class="mt-4 mb-2">Michael Eghan</h5>
-                    <p class="text-primary">University Of Cape Coast</p>
+                    <h5 class="mt-4 mb-2" data-aos="fade-up">Michael Eghan</h5>
+                    <p class="text-primary" data-aos="fade-up" data-aos-duration="800">University Of Cape Coast</p>
                 </div>
                 <div class="testimonials-single">
-                    <img src="images/client.png" alt="client" class="client-img">
-                    <blockquote class="blockquote">
+                    <img data-aos="fade-right" src="images/client.png" alt="client" class="client-img">
+                    <blockquote data-aos="fade-left" class="blockquote">
                         Thanks to Campus Ride credit feature, I don't have to worry about not having enough money for buss rides.
                     </blockquote>
-                    <h5 class="mt-4 mb-2">Geoffery Debrah Darko</h5>
-                    <p class="text-primary">Accra Central University</p>
+                    <h5 class="mt-4 mb-2" data-aos="fade-up">Geoffery Debrah Darko</h5>
+                    <p class="text-primary" data-aos="fade-up" data-aos-duration="800">Accra Central University</p>
                 </div>
             </div>
 
@@ -341,7 +346,7 @@
             <div class="section-title">
                 <small>GALLERY</small>
                 <hr style="width: 80%;">
-                <h3>App Screenshots</h3>
+                <h3 data-aos="zoom-in">App Screenshots</h3>
             </div>
 
             <div class="img-gallery owl-carousel owl-theme" id="gallery">
@@ -368,22 +373,22 @@
             <div class="section-title">
                 <small>FAQ</small>
                 <hr style="width: 80%;">
-                <h3>Frequently Asked Questions</h3>
+                <h3 data-aos="zoom-in">Frequently Asked Questions</h3>
             </div>
 
             <div class="row pt-4">
                 <div class="col-md-6">
-                    <h4 class="mb-3">I left an item on the bus. How can I get it back?</h4>
-                    <p class="light-font mb-5"> While we will make our best effort, Campus Ride can't guarantee the return of items forgotten on our contracted buses. If you did happen to leave something behind you can email <a href="mailto:support@campusrides.com">support@campusrides.com</a>                        and a customer service representative will put you in contact with the bus company</p>
-                    <h4 class="mb-3">Do you operate your own buses?</h4>
-                    <p class="light-font mb-5"> We do not. We partner with fully insured and compliant commercial bus operators around the country to provide truly outstanding service to our passengers</p>
+                    <h4 class="mb-3" data-aos="fade-left">I left an item on the bus. How can I get it back?</h4>
+                    <p class="light-font mb-5" data-aos="fade-up" data-aos-duration="1000"> While we will make our best effort, Campus Ride can't guarantee the return of items forgotten on our contracted buses. If you did happen to leave something behind you can email <a href="mailto:support@campusrides.com">support@campusrides.com</a>                        and a customer service representative will put you in contact with the bus company</p>
+                    <h4 class="mb-3" data-aos="fade-right">Do you operate your own buses?</h4>
+                    <p class="light-font mb-5" data-aos="fade-up" data-aos-duration="1000"> We do not. We partner with fully insured and compliant commercial bus operators around the country to provide truly outstanding service to our passengers</p>
 
                 </div>
                 <div class="col-md-6">
-                    <h4 class="mb-3">Are there discounts or savings available?</h4>
-                    <p class="light-font mb-5">We believe in providing great value every day rather than high rates and frequent discounting. However, we do occasionally have specials available so check the app often! </p>
-                    <h4 class="mb-3">I want to share my feedback where should i contact you?</h4>
-                    <p class="light-font mb-5">Drop us a note at <a href="mailto:support@campusrides.com">support@campusrides.com</a>. We love to hear from our users, both positive and negative feedback is welcome </p>
+                    <h4 class="mb-5" data-aos="fade-left">Are there discounts or savings available?</h4>
+                    <p class="light-font mb-5" data-aos="fade-up" data-aos-duration="1000">We believe in providing great value every day rather than high rates and frequent discounting. However, we do occasionally have specials available so check the app often! </p>
+                    <h4 class="mb-3" data-aos="fade-right">I want to share my feedback where should i contact you?</h4>
+                    <p class="light-font mb-5" data-aos="fade-up" data-aos-duration="1000">Drop us a note at <a href="mailto:support@campusrides.com">support@campusrides.com</a>. We love to hear from our users, both positive and negative feedback is welcome </p>
 
                 </div>
             </div>
@@ -417,21 +422,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 text-center text-lg-left">
-                    <p class="mb-2"> <span class="ti-location-pin mr-2"></span> University of Ghana Computer Science Department</p>
+                    <p class="mb-2" data-aos="fade-right"> <span class="ti-location-pin mr-2"></span> University of Ghana Computer Science Department</p>
                     <div class=" d-block d-sm-inline-block">
-                        <p class="mb-2">
+                        <p class="mb-2" data-aos="fade-up">
                             <span class="ti-email mr-2"></span> <a class="mr-4" href="mailto:support@campusrides.com">support@campusrides.com</a>
                         </p>
                     </div>
                     <div class="d-block d-sm-inline-block">
-                        <p class="mb-0">
+                        <p class="mb-0" data-aos="fade-up">
                             <span class="ti-headphone-alt mr-2"></span> <a href="tel:0203309255">020-330-9255</a>
                         </p>
                     </div>
 
                 </div>
                 <div class="col-lg-6">
-                    <div class="social-icons">
+                    <div class="social-icons" data-aos="fade-left">
                         <a href="#"><span class="ti-facebook"></span></a>
                         <a href="#"><span class="ti-twitter-alt"></span></a>
                         <a href="#"><span class="ti-instagram"></span></a>
@@ -449,10 +454,14 @@
 
         <small>
             <a href="#" class="m-2">PRESS</a>
-            <a href="#" class="m-2">TERMS</a>
+            <a href="#" class="m-2" >TERMS</a>
             <a href="#" class="m-2">PRIVACY</a>
         </small>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- jQuery and Bootstrap -->
     <script src="js/jquery-3.2.1.min.js"></script>
