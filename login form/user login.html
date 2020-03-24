@@ -252,13 +252,44 @@
             margin-left: -184px;
         }
         
+        #uimg {
+            width: 600px;
+            margin-right: 200px;
+        }
+        
+        #homeb {
+            margin-top: -650px;
+            width: 150px;
+            margin-right: -160px;
+        }
+        
+        #regb {
+            margin-top: 650px;
+            width: 150px;
+            margin-left: -360px;
+            margin-right: 200px;
+            color: #fff;
+        }
+        
         @media screen and (max-width: 1050px) {
             .container {
                 grid-gap: 5rem;
             }
         }
         
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1650px) {
+            #homeb {
+                margin-top: -450px;
+                width: 150px;
+                margin-right: -125px;
+            }
+            #regb {
+                margin-top: 450px;
+                width: 150px;
+                margin-left: -360px;
+                margin-right: 200px;
+                color: #fff;
+            }
             form {
                 width: 290px;
             }
@@ -272,9 +303,12 @@
             #checkbo {
                 margin-left: -115px;
             }
+            #uimg {
+                width: 400px;
+            }
         }
         
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: 1000px) {
             .img {
                 display: none;
             }
@@ -296,10 +330,10 @@
     <div class="container" id="#container">
 
         <div class="img">
-            <a href="../index.html" class="cssanimation fadeInTop" style="margin-top: -80%; width: 150px;margin-left: 8%;margin-right: -15px;"><i class="fas fa-home"></i> Home</a>
+            <a href="../index.html" id="homeb" class="cssanimation fadeInTop"><i class="fas fa-home"></i> Home</a>
 
-            <img class="cssanimation fadeInLeft" src="img/undraw_personalization_triu.svg" alt="img">
-            <p class="cssanimation fadeInBottom" style="margin-top: 75%; width: 150px;margin-left:-130px;color: #fff;">Are You New?<a href="./user register.html"><i class="fas fa-long-arrow-alt-left"></i> Sign Up</a></p>
+            <img class=" cssanimation fadeInLeft" id="uimg" src="img/undraw_account_490v.svg" alt="img">
+            <p class="cssanimation fadeInBottom" id="regb">Are You New?<a href="./user register.html"><i class="fas fa-long-arrow-alt-left"></i> Sign Up</a></p>
 
         </div>
 
@@ -308,7 +342,7 @@
         <div class="login-container">
             <!-- Sign in -->
             <div id="signInDiv">
-                <form action="#" class="cssanimation fadeInTop" method="POST" id="userLogin">
+                <form action="#" class="cssanimation fadeInRight" method="POST" id="userLogin">
                     <img class="avatar" src="img/undraw_profile_pic_ic5t(1).svg" alt="img" width="180px">
 
                     <h2 id="formtitle">User Login</h2>
@@ -347,7 +381,7 @@
 
             <!-- Forgot password -->
             <div id="resetPassDiv">
-                <form action="#" method="POST" id="resetPass">
+                <form class="cssanimation fadeInRight" action="#" method="POST" id="resetPass">
 
 
                     <h2 id="formtitle">Forgot Password</h2>
